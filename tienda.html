@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+
+<!--Lenguaje-->
+<html lang="es">
+
+	<!--Inicio del Head-->
+	<head>	
+		<!--Fovicon-->
+		<link rel="icon" href="img/carrito.ico">
+	
+		<!--Idioma del teclado-->
+		<meta charset="UTF-8">	
+	
+		<!--Coloca aca el nombre de tu tienda virtual, este aparecera en la parte de arriba de la pantalla, en la pestaño o ventana-->
+		<title>Yoguis Express</title>	
+		
+		<!--Este código sirve para medir el tamaño de las pantalla-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+		<!--Enlace al archivo boostrap css-->
+		<link rel="stylesheet" href="css/bootstrap.css">	
+	
+		<!--IEstos estilos son exclusivos para el boton de whatsapp-->
+		<style>
+			.appWhatsapp {
+				position: fixed;
+				left: 15px;
+				bottom: 20px;
+				width: 65px;
+				z-index: 1000;
+			}
+	
+			.appWhatsapp img{
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	
+	</head>	
+	<!--Fin del Head-->
+	
+	<!--Inicio del body-->
+	<body>
+	
+	<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="102063681534932">
+      </div>
+	
+	
+
+<!-- Inicio container 1 -->
+<div class="container">
+	
+	<!--Alert-->
+	<div class="row">
+		<div class="col">	
+			<div class="alert alert-primary alert-dismissible fade show" role="alert">
+  				Excelente, exclusivo y rapido servicio en el <strong>Corregimiento de San Antonio de Prado.</strong>
+ 				 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+  				</button>
+			</div>
+		</div>	
+	</div>
+	
+	<!--Inicio Botones-->
+	<div class="row">		
+		<div class="col">	
+		
+			<!--Logo-->
+			<img src="img/yoguis1.jpg" class="carrito" width="10%">		
+	
+		    <!-- Boton Bienvenidos-->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+ 	 			Bienvenidos
+			</button>		
+
+	        <!-- Mensaje del Boton de Bienvenidos -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+      				 <h5 class="modal-title" id="exampleModalLabel">Bienvenidos</h5>
+       	 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	  			<span aria-hidden="true">&times;</span>
+       	 			</button>
+     			 </div>
+      				<div class="modal-body">
+      		 			En esta tienda encontraras productos:
+						<ul>
+							<li>Con un excelente precio</li>
+							<li>Solución a necesidades</li>
+							<li>Productos en tendencia en el mercado</li>							  
+      				</div>
+     				<div class="modal-footer">						
+      	  				 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>  						
+     	 			</div>
+    		</div>
+ 	 	</div>
+	</div>
+		
+		
+			<!-- Boton Quienes somos-->
+			<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalsomos">
+ 				 Quienes somos
+			</button>
+	    
+
+	<!-- Mensaje del Boton de Quienes somos -->
+	<div class="modal fade" id="exampleModalsomos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="exampleModalLabel">Quienes Somos</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+     			</div>
+				<div class="modal-body">
+      		 		<p>Tiendas Virtuales de San Antonio de Prado es una propuesta de la clase de Emprendimiento de la I.E Manuel J. Betancur, que tiene como intención activar la economia de nuestro corregimiento a causa de la pandemia del 2020, esto se realizara por medio de Tiendas Virtuales administradas por estudiantes con cualidades de emprendedores digitales en equipo con sus familiares y los comerciantes del sector que son nuestros proveedores</p> 
+					<p>Si tienes alguna inquietud no dudes en comunicarte por cualquiera de nuestros canales.</p>
+					<ul>
+						<li>Nombre del vendedor: Su Nombre y Apellido</li>
+						<li>E-mail: yoguisexpress@gmail.com</li>
+					</ul>					
+      			</div>	    
+      			<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<!-- # whatsapp cambiar 3015262740 -->
+		 			<a href="https://api.whatsapp.com/send?phone=573015262740&text=Bienvenidos!%20en%20que%20te%20podemos%20ayudar" target="_blank" class="btn btn-warning my-2">WhatsApp</a>      	  			  
+					<a href="https://www.facebook.com/tiendasdesanantoniodeprado" target="_blank" class="btn btn-primary my-2">facebook</a>
+     	 		</div>
+    		</div>
+ 	 	</div>
+	</div>
+	
+	
+	<!-- Boton Pago-->		
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalpago">
+  			Pago<img src="img/carrito.png" class="carrito">
+		</button>	
+	
+
+	<!-- Mensaje del Boton de Pago -->
+		<div class="modal fade" id="exampleModalpago" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  			<div class="modal-dialog" role="document">
+   			 	<div class="modal-content">
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="exampleModalLabel">Metodo de Pago</h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      				</div>
+      			<div class="modal-body">
+        			<img src="img/Pagos-Contra-Entrega_large.png" class="card-img-top img-fluid" alt="">
+      			</div>
+      			<div class="modal-footer">
+        			<div class="modal-footer">					
+      	  				 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>  						
+     	 			</div>
+      			</div>
+				 </div>
+    		</div>
+  		</div>
+		
+	</div>
+</div>
+	
+
+<!-- Inicio container 2 -->	
+<div class="container">  	
+		
+		<div class="row">
+			<div class="col-xm-6">
+				<h3 class="display-4 text-center">Yoguis Express<div class="col-xm-6"></div>		
+				<p class="lead text-muted">Selecciona el producto, ordena el pedido y según la caracteristica de este lo tendras "DE UNA". Cuando te llegue el articulo lo pagas. El cobro del envio en la zona urbana sera de $2.000 y en la zona rural de $4.000.</p>	
+			</div>
+			<div class="carousel-inner">
+    			<div class="carousel-item active">
+       			 	<img src="img/YoguisExpress.jpg" class="d-block w-100" alt="...">
+    			</div>   
+  			</div>			
+		</div>
+				
+	
+		<div class="row mt-3 mb-3">
+			<div class="col">				
+				<div class="card-columns">
+					<div class="card">
+						<img src="img/producto1.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 1</h3>
+							<ul>
+								<li>Código del producto: p001</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
+  									Ver
+								</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/producto2.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 2</h3>
+							<ul>
+								<li>Código del producto: p002</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop2">
+  									Ver
+								</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/producto3.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 3</h3>
+							<ul>
+								<li>Código del producto: p003</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p>Código del producto: p003</p>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop3">
+  									Ver
+								</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/producto4.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 4</h3>
+							<ul>
+								<li>Código del producto: p004</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop4">
+  									Ver
+								</button>
+						</div>						
+					</div>
+
+					<div class="card">
+						<img src="img/producto5.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 5</h3>							
+								<ul>
+									<li>Código del producto: p005</li>
+									<li>Precio: $20.000</li>
+									<li>Tiempo de entrega: 2 dias</li>
+								</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop5">
+  									Ver
+								</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/producto6.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 6</h3>
+							<ul>
+								<li>Código del producto: p006</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop6">
+  									Ver
+								</button>
+						</div>
+					</div>
+
+
+
+					<div class="card">
+						<img src="img/producto7.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 7</h3>
+							<ul>
+								<li>Código del producto: p007</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop7">
+  									Ver
+								</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/bg2.jpg" class="card-img-top img-fluid" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Producto 8</h3>
+							<ul>
+								<li>Código del producto: p008</li>
+								<li>Precio: $20.000</li>
+								<li>Tiempo de entrega: 2 dias</li>
+							</ul> 
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error!</p>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop8">
+  									Ver
+								</button>
+						</div>
+					</div>
+				</div>
+				
+		<!-- Modal Producto 1-->
+		<div class="modal fade" id="staticBackdrop1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 1</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail  producto 1 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			  <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+				
+		<!-- Modal Producto 2-->
+		<div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 2</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail  producto 2 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			     <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		
+		<!-- Modal Producto 3-->
+		<div class="modal fade" id="staticBackdrop3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 3</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail  producto 3 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			    <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		
+		<!-- Modal Producto 4-->
+		<div class="modal fade" id="staticBackdrop4" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 4</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail  producto 4 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			     <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		
+		<!-- Modal Producto 5-->
+		<div class="modal fade" id="staticBackdrop5" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 5</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail  producto 5 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			    <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		
+		<!-- Modal Producto 6-->
+		<div class="modal fade" id="staticBackdrop6" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+						<!-- Sway de hotmail  producto 6 -->
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 6</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			    <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>						
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+				
+		<!-- Modal Producto 7-->
+		<div class="modal fade" id="staticBackdrop7" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 7</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail  producto 7 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			    <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		
+		<!-- Modal Producto 8-->
+		<div class="modal fade" id="staticBackdrop8" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 			 <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+					
+      				<div class="modal-header">
+        				<h5 class="modal-title" id="staticBackdropLabel">Producto 8</h5>
+       			   	 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+					
+      				<div class="modal-body">
+						<!-- Sway de hotmail producto 8 -->
+        				<iframe width="760px" height="500px" src="https://sway.office.com/s/Ywxhw1XACJX7MolR/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+      				</div>
+					
+    			    <div class="modal-footer">
+        				<div class="modal-footer">
+							<!-- # whatsapp cambiar 3015262740 -->		 	 				
+      	  	 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							<!-- Formulario de compra de Gmail-->
+      	     				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-success">Quiero uno<img src="img/carrito.png" class="carrito"></button></a>							
+     	 				</div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		
+	<!--Footer-->
+	<div class="row">
+		<div class="col">
+			<footer class="text-muted py-5">	
+				<!--Alert-->
+				<div class="alert alert-primary" role="alert">
+  					Si tuvo algún inconveniente con nuestro servicio, por favor no dude en comunicarlo, en lo mas breve lo solucionaremos, y muchas gracias por su compra.
+				</div>	
+		
+				<p class="mb-1">		
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfk7b9bx7Y4hGI_-YzPbRq8yP3LdseX1f1GU99gEP40YUYRFg/viewform" target="_blank"><button type="button" class="btn btn-info">Reclamos</button></a>
+				</p>
+		
+				<p class="float-right">
+					<a href="#">Ir arriba</a>
+				</p>
+			</footer>
+		</div>
+	</div>
+		
+				
+		<div class="row">
+			<div class="col">
+				<!--Alert-->
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  						<strong>Recibe nuestas promociones por WhatsApp!</strong> Agrega a tu WhatsApp nuestro teléfono y envianos un mensaje con el texto <strong>PRADO.</strong> 
+  						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+  						</button>
+					</div>
+					<p class="text-center"><a href="https://www.facebook.com/tiendasdesanantoniodeprado" target="_blank" class="btn btn-primary my-2">Visitanos en facebook</a></p> 
+			</div>
+		</div>
+				
+		</div>	
+	</div>	
+	
+</div>
+<!-- Fin container 2 -->
+	
+	
+		<!-- Whatsapp parte inferior-->
+		<!-- # whatsapp cambiar 3015262740 -->
+		<a class="appWhatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573015262740&text=Bienvenidos!%20en%20que%20te%20podemos%20ayudar"><img src="img/whatsapp.png" hwight></a>	
+	
+		</div>
+		<!-- Fin container 1 -->
+	
+		<!--Enlaces JavaScript-->	
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+	
+	</body>	
+	<!--Fin del body-->
+	
+</html>
